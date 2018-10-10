@@ -1,0 +1,227 @@
+2018-09-25T23:05:57.739+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-09-25T23:05:57.740+0800 I CONTROL  [initandlisten] MongoDB starting : pid=17284 port=27017 dbpath=D:\MongoDB\Server\4.0\data 64-bit host=DESKTOP-MP618QO
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] db version v4.0.2
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] modules: none
+2018-09-25T23:05:57.741+0800 I CONTROL  [initandlisten] build environment:
+2018-09-25T23:05:57.742+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-09-25T23:05:57.742+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-09-25T23:05:57.742+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-09-25T23:05:57.742+0800 I CONTROL  [initandlisten] options: { config: "D:\MongoDB\Server\4.0\bin\mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "D:\MongoDB\Server\4.0\data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "D:\MongoDB\Server\4.0\log\mongod.log" } }
+2018-09-25T23:05:57.748+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3529M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-09-25T23:05:57.798+0800 I STORAGE  [initandlisten] WiredTiger message [1537887957:798414][17284:140704236855632], txn-recover: Set global recovery timestamp: 0
+2018-09-25T23:05:57.813+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-09-25T23:05:57.832+0800 I CONTROL  [initandlisten] 
+2018-09-25T23:05:57.832+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-09-25T23:05:57.832+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-09-25T23:05:57.832+0800 I CONTROL  [initandlisten] 
+2018-09-25T23:05:57.833+0800 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: d9e577d5-cd63-419c-8866-a83dfef9a0c0
+2018-09-25T23:05:57.851+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2018-09-25T23:05:57.859+0800 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: ee85c3f3-71a7-4706-8433-a096946eb79a
+2018-09-25T23:05:58.411+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/MongoDB/Server/4.0/data/diagnostic.data'
+2018-09-25T23:05:58.413+0800 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 83429b54-2aea-469f-a72b-072dc06bbe50
+2018-09-25T23:05:58.414+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-09-25T23:05:58.414+0800 I STORAGE  [initandlisten] Service running
+2018-09-25T23:05:58.433+0800 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-09-25T23:05:58.434+0800 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-09-25T23:05:58.435+0800 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2018-09-25T23:15:30.973+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8633 #1 (1 connection now open)
+2018-09-25T23:15:30.974+0800 I NETWORK  [conn1] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:8633 (connection id: 1)
+2018-09-25T23:15:30.974+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8634 #2 (2 connections now open)
+2018-09-25T23:15:30.974+0800 I NETWORK  [conn1] end connection 127.0.0.1:8633 (1 connection now open)
+2018-09-25T23:15:31.113+0800 I NETWORK  [conn2] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:8634 (connection id: 2)
+2018-09-25T23:15:31.113+0800 I NETWORK  [conn2] end connection 127.0.0.1:8634 (0 connections now open)
+2018-09-25T23:15:31.224+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8635 #3 (1 connection now open)
+2018-09-25T23:15:41.746+0800 I NETWORK  [conn3] end connection 127.0.0.1:8635 (0 connections now open)
+2018-09-25T23:38:55.984+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:10456 #4 (1 connection now open)
+2018-09-25T23:38:55.986+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:10456 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 16299)" } }
+2018-09-25T23:57:48.847+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2018-09-25T23:57:48.847+0800 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2018-09-25T23:57:48.848+0800 I CONTROL  [serviceShutdown] Shutting down free monitoring
+2018-09-25T23:57:48.849+0800 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2018-09-25T23:57:48.857+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2018-09-25T23:57:48.938+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2018-09-25T23:57:48.938+0800 I CONTROL  [serviceShutdown] now exiting
+2018-09-25T23:57:53.015+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-09-25T23:57:53.513+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] MongoDB starting : pid=14752 port=27017 dbpath=D:\MongoDB\Server\4.0\data 64-bit host=DESKTOP-MP618QO
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] db version v4.0.2
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] modules: none
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] build environment:
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-09-25T23:57:53.514+0800 I CONTROL  [initandlisten] options: { config: "D:\MongoDB\Server\4.0\bin\mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "D:\MongoDB\Server\4.0\data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "D:\MongoDB\Server\4.0\log\mongod.log" } }
+2018-09-25T23:57:53.520+0800 I STORAGE  [initandlisten] Detected data files in D:\MongoDB\Server\4.0\data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-09-25T23:57:53.520+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3529M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-09-25T23:57:53.877+0800 I STORAGE  [initandlisten] WiredTiger message [1537891073:877745][14752:140704236855632], txn-recover: Main recovery loop: starting at 1/31872
+2018-09-25T23:57:54.156+0800 I STORAGE  [initandlisten] WiredTiger message [1537891074:156034][14752:140704236855632], txn-recover: Recovering log 1 through 2
+2018-09-25T23:57:54.301+0800 I STORAGE  [initandlisten] WiredTiger message [1537891074:300636][14752:140704236855632], txn-recover: Recovering log 2 through 2
+2018-09-25T23:57:54.422+0800 I STORAGE  [initandlisten] WiredTiger message [1537891074:421721][14752:140704236855632], txn-recover: Set global recovery timestamp: 0
+2018-09-25T23:57:54.443+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-09-25T23:57:54.456+0800 I CONTROL  [initandlisten] 
+2018-09-25T23:57:54.456+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-09-25T23:57:54.456+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-09-25T23:57:54.456+0800 I CONTROL  [initandlisten] 
+2018-09-25T23:57:55.117+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/MongoDB/Server/4.0/data/diagnostic.data'
+2018-09-25T23:57:55.119+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-09-25T23:57:55.119+0800 I STORAGE  [initandlisten] Service running
+2018-09-26T00:26:55.754+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8802 #1 (1 connection now open)
+2018-09-26T00:26:55.757+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8803 #2 (2 connections now open)
+2018-09-26T00:26:55.757+0800 I NETWORK  [conn1] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:8802 (connection id: 1)
+2018-09-26T00:26:55.757+0800 I NETWORK  [conn1] end connection 127.0.0.1:8802 (1 connection now open)
+2018-09-26T00:26:55.758+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8804 #3 (2 connections now open)
+2018-09-26T00:26:55.759+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8805 #4 (3 connections now open)
+2018-09-26T00:26:55.897+0800 I NETWORK  [conn2] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:8803 (connection id: 2)
+2018-09-26T00:26:55.897+0800 I NETWORK  [conn2] end connection 127.0.0.1:8803 (2 connections now open)
+2018-09-26T00:26:56.004+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8807 #5 (3 connections now open)
+2018-09-26T00:27:15.787+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8832 #6 (4 connections now open)
+2018-09-26T00:27:15.787+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:8832 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T00:27:15.839+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8833 #7 (5 connections now open)
+2018-09-26T00:27:15.849+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:8833 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T00:28:17.756+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8900 #8 (6 connections now open)
+2018-09-26T00:28:17.757+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:8900 conn8: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T00:28:17.803+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:8901 #9 (7 connections now open)
+2018-09-26T00:28:17.804+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:8901 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T00:28:51.929+0800 I NETWORK  [conn3] end connection 127.0.0.1:8804 (6 connections now open)
+2018-09-26T00:28:51.932+0800 I NETWORK  [conn4] end connection 127.0.0.1:8805 (5 connections now open)
+2018-09-26T00:28:51.932+0800 I NETWORK  [conn5] end connection 127.0.0.1:8807 (4 connections now open)
+2018-09-26T00:39:03.689+0800 I NETWORK  [conn7] end connection 127.0.0.1:8833 (3 connections now open)
+2018-09-26T00:39:03.690+0800 I NETWORK  [conn6] end connection 127.0.0.1:8832 (2 connections now open)
+2018-09-26T00:39:03.691+0800 I NETWORK  [conn8] end connection 127.0.0.1:8900 (1 connection now open)
+2018-09-26T00:39:03.691+0800 I NETWORK  [conn9] end connection 127.0.0.1:8901 (0 connections now open)
+2018-09-26T12:36:37.527+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3796 #10 (1 connection now open)
+2018-09-26T12:36:37.529+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:3796 conn10: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:36:37.639+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3797 #11 (2 connections now open)
+2018-09-26T12:36:37.639+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:3797 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:37:20.505+0800 I STORAGE  [conn10] createCollection: users.temp with generated UUID: 0e23e2f0-8d7b-4988-ba60-ed6fa028c9f8
+2018-09-26T12:37:20.525+0800 I COMMAND  [conn10] CMD: drop users.temp
+2018-09-26T12:37:20.525+0800 I STORAGE  [conn10] Finishing collection drop for users.temp (0e23e2f0-8d7b-4988-ba60-ed6fa028c9f8).
+2018-09-26T12:37:46.577+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3819 #12 (3 connections now open)
+2018-09-26T12:37:46.578+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:3819 conn12: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:37:46.625+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3820 #13 (4 connections now open)
+2018-09-26T12:37:46.625+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:3820 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:43:37.845+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3906 #14 (5 connections now open)
+2018-09-26T12:43:37.850+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:3906 conn14: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:43:37.909+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3908 #15 (6 connections now open)
+2018-09-26T12:43:37.909+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:3908 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:44:01.107+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3915 #16 (7 connections now open)
+2018-09-26T12:44:01.108+0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:3915 conn16: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:44:01.170+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:3916 #17 (8 connections now open)
+2018-09-26T12:44:01.171+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:3916 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-26T12:44:24.713+0800 I NETWORK  [conn12] end connection 127.0.0.1:3819 (7 connections now open)
+2018-09-26T12:44:24.719+0800 I NETWORK  [conn13] end connection 127.0.0.1:3820 (6 connections now open)
+2018-09-26T12:44:24.720+0800 I NETWORK  [conn14] end connection 127.0.0.1:3906 (5 connections now open)
+2018-09-26T12:44:24.722+0800 I NETWORK  [conn15] end connection 127.0.0.1:3908 (4 connections now open)
+2018-09-26T12:44:24.725+0800 I NETWORK  [conn16] end connection 127.0.0.1:3915 (3 connections now open)
+2018-09-26T12:44:24.726+0800 I NETWORK  [conn17] end connection 127.0.0.1:3916 (2 connections now open)
+2018-09-26T12:44:24.985+0800 I NETWORK  [conn10] end connection 127.0.0.1:3796 (1 connection now open)
+2018-09-26T12:44:24.985+0800 I NETWORK  [conn11] end connection 127.0.0.1:3797 (0 connections now open)
+2018-09-27T13:08:21.290+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_PRESHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2018-09-27T13:08:21.297+0800 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2018-09-27T13:08:21.308+0800 I CONTROL  [serviceShutdown] Shutting down free monitoring
+2018-09-27T13:08:21.309+0800 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2018-09-27T13:08:21.314+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2018-09-27T13:08:21.340+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2018-09-27T13:08:21.340+0800 I CONTROL  [serviceShutdown] now exiting
+2018-09-27T13:08:47.136+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-09-27T13:08:48.428+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-09-27T13:08:48.570+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5164 port=27017 dbpath=D:\MongoDB\Server\4.0\data 64-bit host=DESKTOP-MP618QO
+2018-09-27T13:08:48.572+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-09-27T13:08:48.572+0800 I CONTROL  [initandlisten] db version v4.0.2
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten] modules: none
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten] build environment:
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-09-27T13:08:48.573+0800 I CONTROL  [initandlisten] options: { config: "D:\MongoDB\Server\4.0\bin\mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "D:\MongoDB\Server\4.0\data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "D:\MongoDB\Server\4.0\log\mongod.log" } }
+2018-09-27T13:08:48.587+0800 I STORAGE  [initandlisten] Detected data files in D:\MongoDB\Server\4.0\data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-09-27T13:08:48.588+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3529M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-09-27T13:08:49.167+0800 I STORAGE  [initandlisten] WiredTiger message [1538024929:167043][5164:140704035332432], txn-recover: Main recovery loop: starting at 2/251264
+2018-09-27T13:08:49.539+0800 I STORAGE  [initandlisten] WiredTiger message [1538024929:538806][5164:140704035332432], txn-recover: Recovering log 2 through 3
+2018-09-27T13:08:49.717+0800 I STORAGE  [initandlisten] WiredTiger message [1538024929:716931][5164:140704035332432], txn-recover: Recovering log 3 through 3
+2018-09-27T13:08:49.869+0800 I STORAGE  [initandlisten] WiredTiger message [1538024929:869040][5164:140704035332432], txn-recover: Set global recovery timestamp: 0
+2018-09-27T13:08:49.883+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-09-27T13:08:49.907+0800 I CONTROL  [initandlisten] 
+2018-09-27T13:08:49.907+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-09-27T13:08:49.907+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-09-27T13:08:49.908+0800 I CONTROL  [initandlisten] 
+2018-09-27T13:08:50.787+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/MongoDB/Server/4.0/data/diagnostic.data'
+2018-09-27T13:08:50.813+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-09-27T13:08:50.815+0800 I STORAGE  [initandlisten] Service running
+2018-09-28T14:35:30.136+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:4001 #1 (1 connection now open)
+2018-09-28T14:35:30.137+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:4002 #2 (2 connections now open)
+2018-09-28T14:35:30.138+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:4003 #3 (3 connections now open)
+2018-09-28T14:35:30.139+0800 I NETWORK  [conn1] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:4001 (connection id: 1)
+2018-09-28T14:35:30.139+0800 I NETWORK  [conn1] end connection 127.0.0.1:4001 (2 connections now open)
+2018-09-28T14:35:30.374+0800 I NETWORK  [conn2] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:4002 (connection id: 2)
+2018-09-28T14:35:30.374+0800 I NETWORK  [conn2] end connection 127.0.0.1:4002 (1 connection now open)
+2018-09-28T14:35:30.379+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:4005 #4 (2 connections now open)
+2018-09-28T14:43:43.365+0800 I NETWORK  [conn3] end connection 127.0.0.1:4003 (1 connection now open)
+2018-09-28T14:43:43.366+0800 I NETWORK  [conn4] end connection 127.0.0.1:4005 (0 connections now open)
+2018-09-28T16:14:54.057+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1040 #5 (1 connection now open)
+2018-09-28T16:14:54.059+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:1040 conn5: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.16299-SP0" }, platform: "CPython 3.6.6.candidate.1" }
+2018-09-28T16:14:54.563+0800 I NETWORK  [conn5] end connection 127.0.0.1:1040 (0 connections now open)
+2018-09-28T16:22:15.019+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1169 #6 (1 connection now open)
+2018-09-28T16:22:15.020+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:1169 conn6: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.16299-SP0" }, platform: "CPython 3.6.6.candidate.1" }
+2018-09-28T16:22:15.533+0800 I NETWORK  [conn6] end connection 127.0.0.1:1169 (0 connections now open)
+2018-09-28T16:25:10.796+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1301 #7 (1 connection now open)
+2018-09-28T16:25:10.797+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:1301 conn7: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.16299-SP0" }, platform: "CPython 3.6.6.candidate.1" }
+2018-09-28T16:25:10.799+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1302 #8 (2 connections now open)
+2018-09-28T16:25:10.799+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:1302 conn8: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.16299-SP0" }, platform: "CPython 3.6.6.candidate.1" }
+2018-09-28T16:25:10.802+0800 I STORAGE  [conn8] createCollection: lemondb.table with generated UUID: 292cf697-58d7-4a71-99cd-42e668bab3a9
+2018-09-28T16:25:10.833+0800 I NETWORK  [conn8] end connection 127.0.0.1:1302 (1 connection now open)
+2018-09-28T16:25:10.833+0800 I NETWORK  [conn7] end connection 127.0.0.1:1301 (0 connections now open)
+2018-09-28T16:26:01.436+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1310 #9 (1 connection now open)
+2018-09-28T16:26:01.437+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:1310 conn9: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-28T16:26:01.479+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1311 #10 (2 connections now open)
+2018-09-28T16:26:01.480+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:1311 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-28T16:26:11.399+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1314 #11 (3 connections now open)
+2018-09-28T16:26:11.399+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:1314 conn11: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-28T16:26:11.445+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:1315 #12 (4 connections now open)
+2018-09-28T16:26:11.446+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:1315 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-09-28T16:26:27.951+0800 I NETWORK  [conn11] end connection 127.0.0.1:1314 (3 connections now open)
+2018-09-28T16:26:27.955+0800 I NETWORK  [conn12] end connection 127.0.0.1:1315 (2 connections now open)
+2018-09-28T16:26:28.108+0800 I NETWORK  [conn10] end connection 127.0.0.1:1311 (0 connections now open)
+2018-09-28T16:26:28.108+0800 I NETWORK  [conn9] end connection 127.0.0.1:1310 (1 connection now open)
+2018-09-29T00:25:00.111+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_PRESHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2018-09-29T00:25:00.113+0800 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2018-09-29T00:25:00.118+0800 I CONTROL  [serviceShutdown] Shutting down free monitoring
+2018-09-29T00:25:00.119+0800 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2018-09-29T00:25:00.127+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2018-09-29T00:25:00.178+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2018-09-29T00:25:00.179+0800 I CONTROL  [serviceShutdown] now exiting
+2018-09-29T00:25:23.091+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-09-29T00:25:24.499+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-09-29T00:25:24.594+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5216 port=27017 dbpath=D:\MongoDB\Server\4.0\data 64-bit host=DESKTOP-MP618QO
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] db version v4.0.2
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] modules: none
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] build environment:
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-09-29T00:25:24.595+0800 I CONTROL  [initandlisten] options: { config: "D:\MongoDB\Server\4.0\bin\mongod.cfg", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "D:\MongoDB\Server\4.0\data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "D:\MongoDB\Server\4.0\log\mongod.log" } }
+2018-09-29T00:25:24.604+0800 I STORAGE  [initandlisten] Detected data files in D:\MongoDB\Server\4.0\data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-09-29T00:25:24.605+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3529M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-09-29T00:25:25.113+0800 I STORAGE  [initandlisten] WiredTiger message [1538151925:113212][5216:140717919854928], txn-recover: Main recovery loop: starting at 3/288640
+2018-09-29T00:25:25.463+0800 I STORAGE  [initandlisten] WiredTiger message [1538151925:462958][5216:140717919854928], txn-recover: Recovering log 3 through 4
+2018-09-29T00:25:25.681+0800 I STORAGE  [initandlisten] WiredTiger message [1538151925:681112][5216:140717919854928], txn-recover: Recovering log 4 through 4
+2018-09-29T00:25:25.853+0800 I STORAGE  [initandlisten] WiredTiger message [1538151925:853735][5216:140717919854928], txn-recover: Set global recovery timestamp: 0
+2018-09-29T00:25:25.878+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-09-29T00:25:25.905+0800 I CONTROL  [initandlisten] 
+2018-09-29T00:25:25.905+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-09-29T00:25:25.905+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-09-29T00:25:25.905+0800 I CONTROL  [initandlisten] 
+2018-09-29T00:25:26.809+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/MongoDB/Server/4.0/data/diagnostic.data'
+2018-09-29T00:25:26.838+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-09-29T00:25:26.838+0800 I STORAGE  [initandlisten] Service running
